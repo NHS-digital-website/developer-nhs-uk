@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Device metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Document metadata -->
+    <title>NHS Health Developer Network</title>
+    <meta name="description"
+          content="Explore and Make use of the NHS Developer Network with nationally defined NHS messaging APIs">
+    <meta name="keywords" content="NHS Developer Network, NHS APIs, NHS messaging APIs, NHS Digital"/>
+    <meta name="author" content="NHS Digital">
+    <!-- Media & Search metadata -->
+    <link rel="canonical" href="https://developer.nhs.uk/apis/"/>
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@NHSDigital" />
+    <meta name="twitter:creator" content="@NHSDigital" />
+    <meta property="og:title" content="NHS Health Developer Network Hub Page" />
+    <meta property="og:image" content="https://developer.nhs.uk/apple-icon-180x180.png" />
+    <meta property="og:site_name" content="NHS Health Developer Network" />
+    <meta property="og:description" content="Explore and Make use of the NHS Developer Network with nationally defined NHS messaging APIs." />
+    <meta property="og:url" content="https://developer.nhs.uk/apis/" />
+    <meta property="og:type" content="article" />
+    <!-- Browser metadata -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38028819-4"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-38028819-4');
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/style-small.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" type="text/css" href="/css/style-large.css" media="screen and (min-width: 1200px)">
+</head>
+<body>
+<a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
+<header class="main-header">
+    <div class="container">
+        <div class="identity">
+            <a href="https://developer.nhs.uk/apis/">
+                <img src="/images/nhs-digital-logo.svg"
+                     alt="NHS Health Developer Network Logo that links to the API's hub page. ">
+            </a>
+        </div>
+        <div class="navigation">
+            <div class="search-box">
+                <!-- TODO Add Search Box -->
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="https://developer.nhs.uk/apis/">API Hub</a></li>
+                    <li><a href="https://digital.nhs.uk/services/developer">Resources</a></li>
+                    <li><a href="Apps- https://mhealth.service.nhs.uk/">Apps</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-button" onclick="this.parentNode.classList.toggle('change')" aria-hidden="true">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </div>
+</header>
+<section class="banner">
+    <div class="container">
+        <div class="banner-content">
+            <h1><strong>API Hub</strong></h1>
+            <p>
+                This page contains API documentation.<br>
+                For information about the services, library resources, and other content, visit the <a
+                    href="https://digital.nhs.uk/">NHS Digital website</a>.
+            </p>
+        </div>
+    </div>
+</section>
+<nav class="jump-links">
+    <div class="container">
+        <ul>
+            <li><a href="#fhir-apis">FHIR APIs and XML Messaging</a></li>
+            <li><a href="#spine-apis">Spine APIs</a></li>
+            <li><a href="#access-control">Access Control</a></li>
+            <li><a href="#interoperability-toolkit">Interoperability Toolkit</a></li>
+            <li><a href="#other-apis">Other APIs</a></li>
+        </ul>
+    </div>
+</nav>
+<section id="main-content">
+    <div class="container">
+        <article>
+            <h2 id="fhir-apis"><strong>FHIR APIs and XML Messaging</strong></h2>
+            <p>ReST and Messaging APIs conforming to the HL7 FHIR standards - covering national systems and also
+                profiles for use in local integration.</p>
+            <div class="api-boxes">
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Assessment, Discharge and
+                            Withdrawal</strong></h3>
+                        <p>Information required to build ADW Messages to support the exchange of structured information
+                            between
+                            healthcare and social care organisations.</p>
+                        <ul>
+                            <li><a href="https://digital.nhs.uk/services/transfer-of-care-initiative/assessment-discharge-and-withdrawal---developer-resource">Assessment,
+                                Discharge and Withdrawal</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Clinical Decision Support</strong></h3>
+                        <p>Implementation guidance for the Clinical Decision Support APIs.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/cds-api/">Version 0.10.0</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/cds-api-1-0-0/">Version 1.0.0</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Clinical Documents</strong></h3>
+                        <p>FHIR Profiles for the exchange of clinical documents.</p>
+                        <ul>
+                            <li>
+                                <a href="https://data.developer.nhs.uk/fhir/cda-on-fhir-document-header-v1-draft-b/Chapter.1.About/index.html">Document Header</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li>
+                                <a href="https://data.developer.nhs.uk/fhir/cda-on-fhir-eol-v1-draft-b/Chapter.1.About/index.html">End
+                                    of Life Care Document</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Demographic Update Event Messages</strong></h3>
+                        <p>Demographic Update Event Messages are intended to provide updates made to demographic
+                            information
+                            held by the Personal Demographics Service (PDS).</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/demographicupdates-120-rc">Version 1.2.0</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3>
+                            <strong>Diagnostic Data Services</strong>
+                        </h3>
+                        <p>Diagnostic Data Services report message.</p>
+                        <ul>
+                            <li>
+                                <a href="https://data.developer.nhs.uk/fhir/dds-draft-b/DDS-Version-1-0-Draft-B/Chapter.1.About/index.html">Diagnostic Data Services</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Digital Child Health</strong></h3>
+                        <p>Information required to build and send the Digital Child Health event messages.<br>
+                            <br>
+                            Please use DCH (STU3) Release Candidate version of the Implementation Guide.</p>
+                        <ul>
+                            <li><a href="https://nhsconnect.github.io/Digital-Child-Health-STU3/index.html">DCH
+                                (STU3)</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/dch-beta/">DCH (STU3)</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/specifications/dch-alpha/">DCH (DSTU2)</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Digital Maternity</strong></h3>
+                        <p>Information required to enable the exchange of Digital Maternity data.</p>
+                        <ul>
+                            <li><a href="https://digital.nhs.uk/services/digital-maternity-programme/digital-maternity-specifications---developer-guidance">List of specific versions</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/digital-maternity-1-0-0/">Digital Maternity
+                                1.0.0</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Digital Medicines</strong></h3>
+                        <p>FHIR specifications and implementation guidance.</p>
+                        <ul>
+                            <li><a href="https://digital.nhs.uk/services/fhir-apis/guidance-for-developers/digital-medicine-specification">Immunisation
+                                and Emergency supply</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/dose-syntax-implementation/">Medicines and Dosage
+                                Implementation Guidance</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>End of Life</strong></h3>
+                        <p>Information required to build and send the End of Life atomic units of information.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/eol-alpha/">EOL (STU3)</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Events Management</strong></h3>
+                        <p>Information required to publish, subscribe and receive event messages to and from the Events
+                            Management Service.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/ems-beta/">Events Management</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>FGM</strong></h3>
+                        <p>Messaging for the national Female Genital Mutilation Risk Indication System.</p>
+                        <ul>
+                            <li><a href="https://data.developer.nhs.uk/fhir/fgm/Chapter.1.About/index.html">Version
+                                1.0</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/fgm-v2/">Version 2.0.0</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>FHIR Reference Server</strong></h3>
+                        <p>This FHIR server acts as a reference server for all nationally defined FHIR profiles and
+                            valuesets
+                            for use across a range of local and national FHIR implementations.</p>
+                        <ul>
+                            <li><a href="https://fhir.nhs.uk">FHIR API Reference Server</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                            <li><a href="/apis/fhir-policy">FHIR Policy</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>GP Connect</strong></h3>
+                        <p>GP Connect aims to support better clinical care by opening up information and data held
+                            within GP
+                            Practice IT systems for use across health and social care.</p>
+                        <ul>
+                            <li><a href="https://digital.nhs.uk/services/gp-connect/gp-connect-specifications-for-developers">List of GP Connect specifications</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/gpconnect-1-2-3/">GP Connect API 1.2.3</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/gpconnect-0-5-2/">GP Connect API 0.5.2</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/gpconnect-messaging-1-2/">GP Connect Messaging 1.2.0</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>NHS e-Referral Service</strong></h3>
+                        <p>The NHS e-Referral Service has released a range of Application Programming Interfaces (APIs)
+                            and
+                            Ecosystem resources to support third party solution integration.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/index.html">Introduction</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/news_and_events.html">News and
+                                Events</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/forward_notices.html">Forward
+                                Notices</a>
+                            </li>
+                            <li><a href="https://www.openhealthhub.org/c/ers">Forum and Chat </a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf001.html">Authentication
+                                and Authorisation</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf002.html">Clinical
+                                Referral Information</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a004.html">ValueSet</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/explore_endpoint_a009.html">Service
+                                Search</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf003.html">Clinical
+                                Review</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf004.html">Create
+                                Referral</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/develop_business_flow_bf005.html">Referral
+                                Management</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/fhir/eRS/Chapter.1.About/index.html">FHIR
+                                Implementation
+                                Profiles (Draft C)</a>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/specifications/eRS-draftd">FHIR Implementation
+                                Profiles
+                                (Draft D)</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/e-Referrals/mim_intro.html">XML MiM
+                                Integration</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>National Data Opt-Out</strong></h3>
+                        <p>The National Data Opt-out Programme has defined an API to capture a patient's preferences for
+                            use of their data, which will be held in a national data store on the Spine. Initially, this API
+                            will be used by a new national portal, but in future it will be made available to other consumers to
+                            manage these preferences for a patient.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/optout/">National Data Opt-Out</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>National Early Warning Score (NEWS2)</strong></h3>
+                        <p>NEWS2 is the latest version of the National Early Warning Score (NEWS), this improves the
+                            detection
+                            and response to clinical deterioration in patients and is a key element of patient safety
+                            and
+                            improving patient outcomes.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/news2-1.0.0-alpha.1/">National Early Warning Score (NEWS2)</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>National Population Failsafe Management</strong></h3>
+                        <p>National Failsafe Population Management is intended assist with population tracking and
+                            population
+                            screening, for example via the National Failsafe Alert.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/npfm-beta/">National Population Failsafe Management</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>National Pathology</strong></h3>
+                        <p>The National Pathology FHIR Messaging Specification supports the ability to share pathology
+                            results
+                            in NHS primary and secondary care settings. This release focuses on haematology and clinical
+                            biochemistry (also known as chemical pathology) test reporting.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/itk3nationalpathology-1-1-0/">National Pathology</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>National Record Locator</strong></h3>
+                        <p>The National Record Locator aims to provide healthcare professionals and providers with a
+                            facility to
+                            identify and locate 'local' patient records which have been registered on the service.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/nrl/">Version 2.0.0-beta</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/nrls-1-2-3-beta/">Version 1.2.3-beta</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Organisation Data</strong></h3>
+                        <p>The data provided via this API is taken from the data managed by the Organisation Data
+                            Service
+                            (ODS)
+                            within NHS Digital.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/ods/">ODS FHIR API</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li>
+                                <a href="https://digital.nhs.uk/services/organisation-data-service/guidance-for-developers">ODS
+                                    ORD
+                                    API (Non-FHIR)</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Spine Core FHIR Framework</strong></h3>
+                        <p>The Spine Core FHIR API Framework provides common behaviours and services used across FHIR
+                            APIs
+                            delivered on Spine. This specification also covers other Spine services that complement or
+                            are
+                            used
+                            alongside Spine FHIR APIs.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/spine-core/">Spine Core FHIR Framework</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Transfer of Care</strong></h3>
+                        <p>Information required to build Transfer of Care Documents for several areas of care.</p>
+                        <ul>
+                            <li>
+                                <a href="https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/transfer-of-care-specification-versions">Transfer of Care</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>NHS Scheduling</strong></h3>
+                        <p>Profiles to allow searching for free slots and booking appointments. </p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/nhsscheduling/">1.0.2</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.3-alpha/">1.0.3</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/nhsscheduling-1.0.4-alpha/">1.0.4</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article>
+            <h2 id="spine-apis"><strong>Spine APIs</strong></h2>
+            <p>Other (non-FHIR based) Messaging Interfaces into Spine systems.</p>
+            <div class="api-boxes">
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Spine Mini Services</strong></h3>
+                        <p>Spine Mini Services.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/smsp/index.html">Mini Services Introduction</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://digital.nhs.uk/services/spine/spine-mini-service-provider-for-personal-demographics-service">NHS Digital PDS Mini Service Provider</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>EPS Tracker</strong></h3>
+                        <p>Access to non-confidential metadata for electronic prescriptions managed through the national Electronic Prescription Service.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/eps-tracker/">EPS Tracker</a>
+                                <span class="indicator indicator-alpha">Alpha</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Message Implementation Manuals (MiMs)</strong></h3>
+                        <p>The MiM is the formal specification of the HL7v3 messaging on the Spine.</p>
+                        <ul>
+                            <li><a href="https://data.developer.nhs.uk/dms/mim/3.1.09/Index.htm">MiM 3.1.09</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/dms/mim/4.2.00/Index.htm">MiM 4.2.00</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/dms/mim/6.3.01/Index.htm">MiM 6.3.01</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>MESH API</strong></h3>
+                        <p>The Message Exchange for Social care and Health (MESH) component of the Spine allows messages and files to be delivered to registered recipients. This is the HTTP API used by MESH.</p>
+                        <ul>
+                            <li>
+                                <a href="https://meshapi.docs.apiary.io/#">MESH API</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article>
+            <h2 id="access-control"><strong>Access Control</strong></h2>
+            <p>APIs for authenticating and authorising user and controlling access to services.</p>
+            <div class="api-boxes">
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>NHS Identity</strong></h3>
+                        <p>NHS Digital’s implementation of the OpenID Connect API specifications for authenticating health and care professionals.</p>
+                        <ul>
+                            <li>
+                                <a href="https://digital.nhs.uk/services/nhs-identity/guidance-for-developers/an-introduction-to-nhs-identity">NHS Identity</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article>
+            <h2 id="interoperability-toolkit"><strong>Interoperability Toolkit</strong></h2>
+            <p>Specifications for local interoperability</p>
+            <div class="api-boxes">
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Interoperability Toolkit (ITK)</strong></h3>
+                        <p>The ITK is a set of common messaging specifications, frameworks and implementation guides to support interoperability within local organisations and across local health and social care communities.</p>
+                        <ul>
+                            <li><a href="https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/itk3-test-harness/itk3-messaging-distribution-specification-versions">List of specification versions</a>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-7-0/">ITK 2.7.0</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/itk3messagedistribution-2-6-0/">ITK 2.6.0</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/apis/itk3messagedistribution/">ITK 2.5.1</a>
+                                <span class="indicator indicator-beta">Beta</span>
+                            </li>
+                            <li><a href="https://digital.nhs.uk/services/interoperability-toolkit/interoperability-toolkit-releases/release-2.2">ITK 2.2</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Clinical Documents (CDA)</strong></h3>
+                        <p>CDA specifications have now been deprecated and replaced with a FHIR based specification.</p>
+                        <ul>
+                            <li><a href="https://data.developer.nhs.uk/specifications/NHS-CDA-eDischarge/">Transfer of Care</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/fhir/sh/StructuredHeadings-1-0-RC4/">Generic Headings</a>
+                                <span class="indicator indicator-release-candidate">Release Candidate</span>
+                            </li>
+                            <li><a href="https://data.developer.nhs.uk/dms/HSCI-6.0-Draft/Publish/index.html">Social Care Integration</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Development and Testing Tooling</strong></h3>
+                        <p>A set of tools for developers to assis with the testing of FHIR based specifications.</p>
+                        <ul>
+                            <li><a href="https://data.developer.nhs.uk/document-viewer/">Clinical Document Viewer Tool</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                            <li><a href="https://digital.nhs.uk/services/interoperability-toolkit/developer-resources/itk3-test-harness">ITK3 Test Harness</a>
+                                <span class="indicator indicator-experimental">Experimental</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <article>
+            <h2 id="other-apis"><strong>Other APIs</strong></h2>
+            <div class="api-boxes">
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Organisation Data</strong></h3>
+                        <p>The data provided via this API is taken from the data managed by the Organisation Data Service (ODS) within NHS Digital.</p>
+                        <ul>
+                            <li><a href="https://developer.nhs.uk/apis/ods/">ODS FHIR API</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://digital.nhs.uk/services/organisation-data-service/guidance-for-developers">ODS ORD API (Non-FHIR)</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                            <li><a href="https://developer.nhs.uk/downloads-data/open-api-health-social-care-organisation-reference-data/">HSCOrgRefData API</a>
+                                <span class="indicator indicator-retired">Retired</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>NHS Choices APIs</strong></h3>
+                        <p>API developer portal for NHS Choices APIs.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.api.nhs.uk/">NHS Choices APIs</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>EPS Dispensers Directory of Service</strong></h3>
+                        <p>API providing information about EPS dispensing services, and includes search functionality which lists dispensers who should be able to provide dispensing services for a patient with a given location and urgency.</p>
+                        <ul>
+                            <li>
+                                <a href="https://nhseps.github.io/dos-api/">EPS Dispensers Directory of Service</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="api-box">
+                    <div class="inner-box">
+                        <h3><strong>Directory of Services</strong></h3>
+                        <p>APIs provided by the Directory of Services for accessing service information.</p>
+                        <ul>
+                            <li>
+                                <a href="https://developer.nhs.uk/apis/dos-api/">Directory of Services</a>
+                                <span class="indicator indicator-live">Live</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </article>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#todo">Accessibility</a></li>
+                <li><a href="#todo">Privacy Policy</a></li>
+                <li><a href="mailto:websitedevelopment@nhs.net">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+</body>
+</html>

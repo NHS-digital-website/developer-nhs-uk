@@ -1,0 +1,106 @@
+body {
+  background-color: $body-colour;
+  color: $body-text-colour;
+  font-family: "Frutiger W01", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.container {
+  max-width: 992px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p, ul, ol, dl, blockquote, table {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+section article:not(:first-child) {
+  margin-top: 18px;
+}
+
+h1, h2 {
+  font-size: 36px;
+  line-height: 46px;
+}
+
+h3 {
+  font-size: 26px;
+  line-height: 36px;
+  margin-bottom: .5em;
+}
+
+a {
+  &:visited {
+    color: #003087;
+  }
+
+  &:link {
+    color: #005EB8;
+  }
+
+  &:visited {
+    color: #003087;
+  }
+
+  &:link {
+    color: #005EB8;
+  }
+
+  &:focus,
+  &:hover,
+  &:active {
+    color: $focus-colour;
+    background-color: $focus-background-colour;
+    outline: 3px solid $focus-background-colour;
+    text-decoration: none;
+  }
+}
+
+.indicator {
+  outline-style: solid;
+  outline-width: 4px;
+  margin-left: 5px;
+
+  &-experimental{
+    background-color: #330072;
+    outline-color: #330072;
+    color: #fff;
+  }
+  &-alpha{
+    background-color: #fae100;
+    outline-color: #fae100;
+    color: #33322D;
+  }
+  &-beta{
+    background-color: #ed8b00;
+    outline-color: #ed8b00;
+    color: #33322D;
+  }
+  &-release-candidate{
+    background-color: #0072ce;
+    outline-color: #0072ce;
+    color: #fff;
+  }
+  &-live{
+    background-color: #10813c;
+    outline-color: #10813c;
+    color: #fff;
+  }
+  &-retired{
+    background-color: #425563;
+    outline-color: #425563;
+    color: #fff;
+  }
+  &-deprecated{
+    background-color: #8a1538;
+    outline-color: #8a1538;
+    color: #fff;
+  }
+}

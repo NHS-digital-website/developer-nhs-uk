@@ -1,0 +1,49 @@
+.footer {
+  background-color: $footer-background-colour;
+  color: $footer-text-colour;
+  padding: 32px 0;
+
+  a {
+    color: $footer-text-colour;
+    text-decoration: none;
+
+    &:focus,
+    &:hover,
+    &:active {
+      color: $footer-link-focus-colour;
+      background-color: $focus-background-colour;
+      outline: 3px solid $focus-background-colour;
+    }
+  }
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+@mixin footer-large {
+  .footer {
+    ul {
+      li {
+        display: inline-block;
+        float: left;
+        vertical-align: top;
+
+        &:not(:first-child){
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer-small {
+  .footer {
+    ul {
+      li:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+}

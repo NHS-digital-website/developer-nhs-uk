@@ -1,0 +1,13 @@
+.banner {
+  background-color: $banner-background-colour;
+  color: $banner-text-colour;
+  padding: 3.5em 0 3.2em;
+
+  &-content {
+    max-width: 500px;
+
+    a {
+      color: $banner-text-colour;
+    }
+  }
+}
