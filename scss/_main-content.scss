@@ -58,3 +58,7 @@
     }
   }
 }
+
+@mixin  main-content-large-xl(){
+  @include main-content-large;
+}

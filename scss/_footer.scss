@@ -22,6 +22,16 @@
   }
 }
 
+@mixin footer-small {
+  .footer {
+    ul {
+      li:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
 @mixin footer-large {
   .footer {
     ul {
@@ -38,12 +48,6 @@
   }
 }
 
-@mixin footer-small {
-  .footer {
-    ul {
-      li:not(:first-child) {
-        margin-top: 16px;
-      }
-    }
-  }
+@mixin footer-large-xl {
+  @include footer-large;
 }

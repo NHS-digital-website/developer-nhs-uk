@@ -1,7 +1,7 @@
 # NHS Health Developer Network APIs' hub page
 > Helping Developers find NHS API documentation through the https://developer.nhs.uk/apis/ hub page.
 
->![](website/apple-icon.png)
+>![](apple-icon.png)
 
 ## Development setup
 After cloning this repository you may need to install a SCSS compiler.
