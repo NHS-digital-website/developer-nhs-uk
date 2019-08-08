@@ -1,13 +1,27 @@
 .banner {
   background-color: $banner-background-colour;
   color: $banner-text-colour;
-  padding: 3.5em 0 3.2em;
+  padding: 2.9em 0 3.2em;
 
   &-content {
-    max-width: 500px;
+    max-width: 700px;
 
-    a {
-      color: $banner-text-colour;
+    .page-label {
+      font-size: 26px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin-top: 8px;
+    }
+
+    p {
+      margin-top: 8px;
+
+      a {
+        color: $banner-text-colour;
+      }
     }
   }
 }

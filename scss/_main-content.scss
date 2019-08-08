@@ -8,15 +8,22 @@
     flex-wrap: wrap;
 
     .api-box {
-      padding: 12px;
+      padding: 16px 16px 20px;
       box-sizing: border-box;
       display:flex;
 
       .inner-box {
-        background-color: #F7FAFC;
-        border-bottom: 10px solid #DEE2E5;
-        padding: 20px;
+        background-color: #F9FAFB;
+        border-bottom: 4px solid #DFE2E5;
+        color: #425563;
+        padding: 16px;
         flex: auto;
+
+        h3 {
+          color: #005eb8;
+          font-size: 24px;
+          line-height: 26pt;
+        }
 
         ul {
           margin-top: .5em;
