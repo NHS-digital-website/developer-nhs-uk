@@ -10,6 +10,10 @@
   }
 }
 
+@mixin header-large-xl() {
+  @include header-large();
+}
+
 @mixin header-large {
   .identity {
     float: left;

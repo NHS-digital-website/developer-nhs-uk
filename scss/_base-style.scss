@@ -22,6 +22,8 @@ strong {
 
 p, ul, ol, dl, blockquote, table {
   font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 section article:not(:first-child) {
@@ -118,9 +120,8 @@ a {
 }
 
 @mixin base-style-large() {
-  p, ul, ol, dl, blockquote, table {
-    font-size: 18px;
-    line-height: 30px;
+  .container {
+    max-width: 992px;
   }
 }
 
