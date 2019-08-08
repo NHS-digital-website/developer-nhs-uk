@@ -42,17 +42,19 @@
     <meta name="theme-color" content="#ffffff">
     <!-- Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38028819-4"></script>
-    <script>
+    <script type="text/plain" data-cookieconsent="statistics">
         window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
         }
         gtag('js', new Date());
-        gtag('config', 'UA-38028819-4');
+        gtag('config', 'UA-38028819-4', { 'anonymize_ip': true });
     </script>
-    <!-- CSS -->
+    <!-- Site Style -->
     <link rel="stylesheet" type="text/css" href="/css/style-small.css" media="screen and (max-width: 1200px)">
     <link rel="stylesheet" type="text/css" href="/css/style-large.css" media="screen and (min-width: 1200px)">
+    <!-- Cookiebot -->
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="84135343-2b4f-4d1a-b33b-564debb9d745" async></script>
 </head>
 <body>
 <a href="#main-content" class="nhsd-skip-link">Skip to main content</a>
@@ -721,6 +723,7 @@
                 <li><a href="#todo">Accessibility</a></li>
                 <li><a href="#todo">Privacy Policy</a></li>
                 <li><a href="mailto:websitedevelopment@nhs.net">Contact Us</a></li>
+                <li><a href="javascript:Cookiebot.renew()">Cookie consent</a></li>
             </ul>
         </nav>
     </div>
