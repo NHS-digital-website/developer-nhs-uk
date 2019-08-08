@@ -2,6 +2,7 @@
 @import "colours";
 @import "skip-link";
 @import "base-style";
+@include base-style-small;
 @import "header";
 @include header-small;
 @import "banner";

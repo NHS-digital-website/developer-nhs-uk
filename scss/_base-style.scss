@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: $body-colour;
   color: $body-text-colour;
@@ -7,7 +11,7 @@ body {
 }
 
 .container {
-  max-width: 992px;
+  max-width: 1520px;
   padding: 0 16px;
   margin: 0 auto;
 }
@@ -17,15 +21,23 @@ strong {
 }
 
 p, ul, ol, dl, blockquote, table {
-  font-size: 18px;
-  line-height: 30px;
+  font-weight: 400;
 }
 
 section article:not(:first-child) {
   margin-top: 18px;
 }
 
-h1, h2 {
+h1, h2, h3 {
+  overflow-wrap: break-word;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 58px;
+}
+
+h2 {
   font-size: 36px;
   line-height: 46px;
 }
@@ -102,5 +114,20 @@ a {
     background-color: #8a1538;
     outline-color: #8a1538;
     color: #fff;
+  }
+}
+
+@mixin base-style-large() {
+  p, ul, ol, dl, blockquote, table {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@mixin base-style-small() {
+  p, ul, ol, dl, blockquote, table {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
   }
 }

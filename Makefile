@@ -1,4 +1,4 @@
 build-css:
-	sass website/scss:website/css --style compressed
+	sass scss:css --style compressed
 build-and-watch-css:
-	sass website/scss:website/css --style compressed --watch
+	sass scss:css --style compressed --watch
